@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,minimum-scale=1, maximum-scale=1">
+    <title>Restaurant-Website</title>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- header starts here -->
+    <header>
+        <a href="#" class="logo"><i class="fa-solid fa-utensils"></i> Resto.</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#dishes">Dishes</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <!-- <a href="#review">Reviews</a> -->
+            <a href="#order">Order</a>
+        </nav>
+        <div class="icons">
+            <i class="fa-solid fa-bars" id="menu-bar"></i>
+            <i class="fa-solid fa-search" id="search-icon"></i>
+            <a class="fa-solid fa-heart" id=""></a>
+            <a class="fa-solid fa-shopping-cart" ></a>
+
+        </div>
+       
+    </header>
+    
+    <!-- header ends here -->
+
+
+    <!-- Search section starts-->
+    <section>
+        <form action="" id="search-form">
+            <input type="search" onfocus="this.value=''" placeholder="Search here.." id="search-box" autocomplete="off">
+            <label for="search-box" class="fa-solid fa-search" id="search-icon"> </label>
+            <i class="fa-solid fa-close" id="close"></i>
+        </form>
+    </section>
+    <!-- Search section ends -->
+
+    <!-- Home section starts -->
+    <section class="home" id="home">
+        <div class="swiper-container home-slider">
+            <div class="swiper-wrapper wrapper">
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Specials</span>
+                        <h3>Spicy Noodles</h3>
+                        <p>Spicy noodles, spicy days.The taste of real food. Our noodles are packed with more than just the essential amino acids, they're packed with flavor.A spicy treat for your taste buds, and so much more.</p>
+                        <a href="#" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/chowmein-removebg-preview.png">
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Specials</span>
+                        <h3>Chilli Pasta</h3>
+                        <p>A little spicy with the classic garlicky aroma, these orange toned pasta have a life of their own! A true blending of technique and flavor, this pasta is sure to be a favorite!</p>
+                        <a href="" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/pasta-removebg-preview.png">
+                        
+                    </div>
+                </div>
+                <div class="swiper-slide slide">
+                    <div class="content">
+                        <span>Our Specials</span>
+                        <h3>Spicy Momos</h3>
+                        <p>Smoky momos marinated with all the Indian spices, tossed in a little bit of cream- momo is the best fusion momo to exist. Often paired with red chilli chutney and mayonnaise,Momos offer a burst of flavours.</p>
+                        <a href="" class="btn">Order Now</a>
+                    </div>
+                    <div class="image">
+                        <img src="images/momos-removebg-preview.png">
+                        
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+
+   
+    <!-- Home section ends -->
+
+
+    <!-- Dishes section starts -->
+    <section class="dishes" id="dishes">
+        <h3 class="sub-heading">Our Dishes</h3>
+        <h1 class="heading">Popular Dishes</h1>
+        <div class="box-container">
+            <div class="box">
+                <a href="" class="fa-solid fa-eye"></a>
+                <a href="" class="fa-solid fa-heart">   </a>     
+
+                <img src="images/berger.png"/>
+                <h3>Delicious Berger</h3>
+                <div class="stars">
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                   
+                </div> 
+                <span>$15.99</span>
+                <a href="" class="addtocart">Add to Cart</a>
+            </div>
+            <div class="box">
+                <a href="" class="fa-solid fa-eye"></a>
+                <a href="" class="fa-solid fa-heart">   </a>     
+
+                <img src="images/momos-removebg-preview.png"/>
+                <h3>Spicy Momos </h3>
+                <div class="stars">
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                    <!-- <a href="#" class="fa-solid fa-star"></a> -->
+                    <a href="" class="fa-solid fa-star"></a>
+                </div>
+                <span>$12.00</span>
+                <a href="" class="addtocart">Add to Cart</a>
+            </div>
+            <div class="box">
+                <a href="" class="fa-solid fa-eye"></a>
+                <a href="" class="fa-solid fa-heart">   </a>     
+
+                <img src="images/pizza.png"/>
+                <h3>Delicious Pizza</h3>
+                <div class="stars">
+                    <a href="" class="fa-solid fa-star"></a>
+                    <!-- <a href="#" class="fa-solid fa-star"></a>
+                    <a href="#" class="fa-solid fa-star"></a> -->
+                    <a href="" class="fa-solid fa-star"></a>
+                </div>
+                <span>$16.99</span>
+                <a href="" class="addtocart">Add to Cart</a>
+            </div>
+           
+            <div class="box">
+                <a href="" class="fa-solid fa-eye"></a>
+                <a href="" class="fa-solid fa-heart">   </a>     
+
+                <img src="images/pasta-removebg-preview.png"/>
+                <h3>Delicious Pasta</h3>
+                <div class="stars">
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                </div>
+                <span>$13.99</span>
+                <a href="#" class="addtocart">Add to Cart</a>
+            </div>
+            <div class="box">
+                <a href="" class="fa-solid fa-eye"></a>
+                <a href="" class="fa-solid fa-heart">   </a>     
+
+                <img src="images/cake.png"/>
+                <h3>Delicious Cake</h3>
+                <div class="stars">
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                </div>
+                <span>$15.99</span>
+                <a href="#" class="addtocart">Add to Cart</a>
+            </div>
+            <div class="box">
+                <a href="" class="fa-solid fa-eye"></a>
+                <a href="" class="fa-solid fa-heart">   </a>     
+
+                <img src="images/whitepasta.png">
+                <h3>Delicious Pasta</h3>
+                <div class="stars">
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                    <a href="" class="fa-solid fa-star"></a>
+                </div>
+                <span>$11.99</span>
+                <a href="" class="addtocart">Add to Cart</a>
+            </div>
+          
+        </div>
+    </section>
+        <!-- Dishes section ends -->
+   
+
+
+    <section id="about" class="about">
+        <h3 class="sub-heading">
+            About Us
+        </h3>
+        <h1 class="heading">
+            Why Choose Us?
+        </h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/aboutus.png">
+            </div>
+            <div class="content">
+                <h3>Best Food In The Country</h3>
+                <p>Our passion for our food and our people transmits to everything we make. You can also order everything on our menu for your celebrations or events from our Catering service. </p><br>
+                <p>
+                    Our passion to deliver an exquisite experience is reflected in our generous, absolutely delicious food, cooked with heart and soul for our customers.
+                </p>
+                 <div class="icons-container">
+                    <div class="icons">
+                        
+                        <i class="fa-solid fa-shipping-fast"></i>
+                        <span>Free Delivery</span>
+                 </div>
+                 <div class="icons">
+                        
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <span>Fast payments</span>
+             </div>
+             <div class="icons">
+                        
+                <i class="fa-solid fa-headset"></i>
+                <span>24/7 services</span>
+             </div>
+            </div>
+
+        </div>
+    </section>
+     <!-- about section end here -->
+
+     <section id="menu" class="menu">
+        <h3 class="sub-heading">Our Menu</h3>
+        <h1 class="heading">Today's Speciality</h1>
+        <div class="box-container">
+            <div class="box">
+                <div class="image">
+                    <img src="images/pasta-removebg-preview.png">
+                    <a href="" class="fa-solid fa-heart"></a>
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+
+                    </div>
+                    <h3>Delicious Pasta</h3>
+                    <p>A little spicy with the classic garlicky aroma, these orange toned pasta have a life of their own! A true blending of technique and flavor, this pasta is sure to be a favorite!</p>
+                    <div class="new">
+                    <a href="" class="btn">Add to Cart</a>
+                    <span class="pice">$11.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/cake.png">
+                    <a href="" class="fa-solid fa-heart"></a>
+
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Tasty Cake</h3>
+                    <p>Any celebration, whether a cozy gathering or an extravagent party, is incomplete without cake! We offer a wide range of handcrafted speciality cakes that are a treat to the eyes and also the taste buds.</p>
+                    <div class="new">
+                        <a href="" class="btn">Add to Cart</a>
+                        <span class="pice">$10.99</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/chowmein.png">
+                    <a href="" class="fa-solid fa-heart"></a>
+
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Delicious Noodles</h3>
+                    <p>Spicy noodles, spicy days.The taste of real food. Our noodles are packed with more than just the essential amino acids, they're packed with flavor.A spicy treat for your taste buds, and so much more.</p>
+                    <div class="new">
+                        <a href="" class="btn">Add to Cart</a>
+                        <span class="pice">$13.99</span>
+                     </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/Food-Pizza-Basil-Tomato.webp">
+                    <a href=""" class="fa-solid fa-heart"></a>
+
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Delicious Pizza</h3>
+                    <p>It's easy to take pizza for granted. It's your go-to when you need an easy meal at home or for an office event. But don't forget that a good pie can be elevated to gourmet cooking with the right combination of crust, sauce, cheese, toppings.</p>
+                    <div class="new">
+                        <a href=""" class="btn">Add to Cart</a>
+                        <span class="pice">$15.99</span>
+                    </div>
+                    <!-- <span class="pice">$12.99</span> -->
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/whitepasta.png">
+                    <a href=""" class="fa-solid fa-heart"></a>
+
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                    </div>
+                    <h3>Delicious White-Pasta</h3>
+                    <p>A little spicy with the classic garlicky aroma, these orange toned pasta have a life of their own! A true blending of technique and flavor, this pasta is sure to be a favorite!! A true blending of technique and flavor,white pasta is sure to be your favourite.</p>
+                    <div class="new">
+                        <a href=""" class="btn">Add to Cart</a>
+                        <span class="pice">$11.00</span>
+                    </div>
+                </div>
+            </div>
+            <div class="box">
+                <div class="image">
+                    <img src="images/momos.png">
+                    <a href=""" class="fa-solid fa-heart"></a>
+
+                </div>
+                <div class="content">
+                    <div class="stars">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <!-- <i class="fa-solid fa-star"></i> -->
+                        <!-- <i class="fa-solid fa-star"></i> -->
+                    </div>
+                    <h3>Delicious Momos</h3>
+                    <p>Smoky momos marinated with all the Indian spices, tossed in a little bit of cream- momo is the best fusion momo to exist. Often paired with red chilli chutney and mayonnaise,Momos offer a burst of flavours.
+                    
+                    </p>
+                    <div class="new">
+                        <a href=""" class="btn">Add to Cart</a>
+                        <span class="pice">$12.99</span>
+                    </div>
+                </div>
+            </div>
+           
+        </div>
+     </section>
+     <!-- menu section ends here -->
+
+     <!-- order section starts -->
+     <section id="order" class="order">
+            <h3 class="sub-heading">Order now</h3>
+            <h1 class="heading">Free and Fast</h1>
+            <form action="">
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Your Name</span>
+                        <input type="text" placeholder="Enter Your Name">
+                     </div>
+                    <div class="input">
+                     <span>Your Phone Number</span>
+                     <input type="number" placeholder="Enter Your Phone Number">
+                     </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Your Order</span>
+                        <input type="text" placeholder="Enter Food Name">
+                   </div>
+                   <div class="input">
+                     <span>Additional Food</span>
+                     <input type="text" placeholder="Extra with Food">
+                    </div>
+                </div>
+                <div class="inputBox">
+                    <div class="input">
+                        <span>Quantity Needed</span>
+                        <input type="number" placeholder="How many orders">
+                   </div>
+                   <div class="input">
+                     <span>Date and Time</span>
+                     <input type="date" placeholder="Extra with Food">
+                    </div>
+                 </div>
+                 <div class="inputBox">
+                    <div class="input">
+                        <span>Your Address</span>
+                        <textarea name="" placeholder="Enter your address" ></textarea>
+                     </div>
+                   <div class="input">
+                     <span>Your Message</span>
+                     <input type="text" placeholder="Enter your message">
+                    </div>
+                </div>
+                <input type="submit" value="order now" class="btn">
+            </form>
+     </section>
+     <!-- Order section ends here -->
+
+     <section id="footer" class="footer">
+        <div class="box-container">
+            <div class="box">
+                <h3>Locations</h3>
+                <a href="#">India</a>
+                <a href="#">Japan</a>
+                <a href="#">Russia</a>
+                <a href="#">USA</a>
+                <a href="#">France</a>
+            </div>
+            <div class="box">
+                <h3>Quick Links</h3>
+                <a href="#">Home</a>
+                <a href="#dishes">Dishes</a>
+                <a href="#about">About</a>
+                <a href="#menu">Menu</a>
+                <a href="#order">Order</a>
+            </div> 
+            <div class="box">
+                <h3>Contact Info</h3>
+                <a href="#">+123-456-7890</a>
+                <a href="#">+111-222-3333</a>
+                <a href="#">shruti@gmail.com</a>
+                <a href="#">Ghaziabad,India-201001</a>
+                <a href="#">France</a>
+            </div>
+            <div class="box">
+                <h3>Follow Us</h3>
+                <a href="#">LinkedIn</a>
+                <a href="#">Facebook</a>
+                <a href="#">Instagram</a>
+                <a href="#">Twitter</a>
+            </div>
+        </div>
+     </section>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>

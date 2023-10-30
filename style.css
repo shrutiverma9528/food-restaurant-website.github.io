@@ -1,0 +1,557 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;1,300;1,900&family=Nunito+Sans:opsz,wght@6..12,300&family=Poppins:wght@300&family=Roboto:wght@300&display=swap");
+
+:root {
+  --green: #27ae60;
+  --black: #192a56;
+  --light-color: #666;
+  --box-shadow: 0 0.5rem 1.5rem rgba(0, 0, 0, 0.1);
+}
+* {
+  font-family: "Nunito", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+html {
+  overflow-x: hidden;
+  scroll-padding-top: 1rem;
+  scroll-behavior: smooth;
+}
+a {
+  text-decoration: none;
+}
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  background: white;
+  padding: 16px 7%;
+  align-items: center;
+  justify-content: space-between;
+  z-index: 1000;
+  box-shadow: var(--box-shadow);
+}
+
+header .logo {
+  font-size: 1.5rem;
+  color: var(--black);
+  font-weight: bolder;
+  text-decoration: none;
+}
+header .logo i {
+  color: var(--green);
+}
+
+header .navbar a {
+  padding: 0.5rem 1.4em;
+  text-decoration: none;
+  color: var(--black);
+  border-radius: 5px;
+}
+header .navbar a:hover {
+  color: white;
+  background: var(--black);
+}
+
+header > .icons > i,
+header > .icons > a {
+  cursor: pointer;
+  color: var(--black);
+  border-radius: 50%;
+  background: #eee;
+  width: 2rem;
+  height: 2rem;
+  line-height: 2;
+  margin-left: 10px;
+  text-align: center;
+  transition: s linear;
+  transform: rotate(360deg);
+}
+header > .icons > i:hover,
+header > .icons > a:hover {
+  color: #fff;
+  background: var(--black);
+}
+#menu-bar {
+  display: none;
+}
+
+#search-form {
+  position: absolute;
+  top: -110%;
+  width: 100%;
+  height: 100%;
+  z-index: 1004;
+  background: rgba(0, 0, 0, 0.79);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid;
+}
+#search-form #search-box {
+  padding: 0.4rem 1rem;
+  height: 2rem;
+  width: 30rem;
+  border-radius: 20px;
+  font-size: 20px;
+  background: black;
+  color: #fff;
+}
+#search-form #search-box::placeholder {
+  color: #fff;
+}
+#search-form #search-box::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+}
+#search-form #search-icon {
+  position: relative;
+  right: 30px;
+  color: white;
+  cursor: pointer;
+}
+#search-form.active {
+  top: 0;
+}
+#search-form #close {
+  position: absolute;
+  top: 0.8rem;
+  right: 6%;
+  font-size: 2rem;
+  background: black;
+  text-align: center;
+  border-radius: 50%;
+  width: 2.5rem;
+  line-height: 1.3;
+  height: 2.5rem;
+  color: white;
+  cursor: pointer;
+  transition: 0.5s ease-in-out;
+}
+section {
+  padding: 2.5rem 2.5%;
+}
+
+.home .home-slider .slide {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  align-items: center;
+  /* padding:1rem; */
+}
+.home .home-slider .slide .content {
+  /* width:50%; */
+  flex: 1 1 30rem;
+}
+
+.home .home-slider .slide .image {
+  /* flex:1 1 40rem; */
+  flex: 1 1 25rem;
+  /* border:2px solid; */
+}
+.home .home-slider .slide .image img {
+  width: 100%;
+}
+.home .home-slider .slide .content span {
+  color: var(--green);
+  font-size: 2.5rem;
+}
+.home .home-slider .slide .content h3 {
+  color: var(--black);
+  font-size: 2.5rem;
+}
+
+.home .home-slider .slide .content p {
+  color: var(--light-color);
+  font-size: 1.4rem;
+  padding: 1rem 0;
+}
+.btn {
+  font-size: 1.3rem;
+  background: var(--black);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  display: inline-block;
+  margin-top: 0.5rem;
+}
+.swiper-pagination-bullet-active {
+  background: var(--green);
+}
+.btn:hover {
+  padding:0.6rem 1.1rem;
+}
+
+#dishes .sub-heading,
+#dishes .heading {
+  text-align: center;
+  font-size: 2rem;
+  margin: 1rem;
+}
+#dishes .sub-heading {
+  font-weight: 500;
+}
+.dishes .box-container {
+  /* display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(17rem,1fr)); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  /* border: 2px solid red; */
+  padding: 1.5rem;
+  overflow: hidden;
+  margin: 2rem;
+  gap: 1.5rem;
+  overflow: hidden;
+}
+.dishes .box-container .box {
+  flex-shrink: 0;
+  flex-basis: 18rem;
+  position: relative;
+  background: white;
+  /* margin:1rem; */
+  box-shadow: var(--box-shadow);
+  text-align: center;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+.dishes .box-container .box img {
+  width: 60%;
+}
+.dishes .box-container .box .fa-heart,
+.dishes .box-container .box .fa-eye {
+  position: absolute;
+  top: 1rem;
+  font-size: 1.3rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  background: #eee;
+  line-height: 2;
+  border-radius: 50%;
+  z-index: -1;
+  color: var(--black);
+}
+.dishes .box-container .box .fa-eye {
+  left: -15rem;
+}
+.dishes .box-container .box .fa-heart:hover,
+.dishes .box-container .box .fa-eye:hover {
+  color: white;
+  background: var(--green);
+}
+.dishes .box-container .box .fa-heart {
+  right: -17rem;
+}
+.dishes .box-container .box img {
+  width: 17rem;
+  height: 17rem;
+  /* flex:1 1 17rem;  */
+}
+
+.dishes .box-container .box:hover .fa-heart {
+  z-index: 1;
+  right: 1rem;
+}
+.dishes .box-container .box:hover .fa-eye {
+  z-index: 1;
+  left: 1rem;
+}
+.dishes .box-container .box .stars {
+  position: absolute;
+  left: 0.5rem;
+}
+.box-container .box .stars a {
+  color: var(--green);
+  z-index: 1;
+}
+.box-container .box span {
+  font-size: 1.5rem;
+  position: absolute;
+  right: 0.5rem;
+}
+.dishes .box-container .box .addtocart {
+  font-size: 1.2rem;
+  color: white;
+  background: var(--black);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  position: relative;
+  top: 1rem;
+}
+
+.dishes .box-container .box .addtocart:hover {
+  color: white;
+  background: var(--green);
+}
+
+#about .heading,
+#about .sub-heading {
+  text-align: center;
+  padding: 0.5rem;
+}
+
+.about .row {
+  display: flex;
+  gap: 1.3rem;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.about .row .image {
+  /* border: 2px solid; */
+  flex: 1 1 25rem;
+}
+.about .row .image img {
+  width: 100%;
+}
+
+.about .row .content {
+  flex: 1 1 26rem;
+}
+.about .row .content h3 {
+  font-size: 2rem;
+  color: var(--black);
+}
+.about .row .content .icons-container {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+.about .row .content .icons {
+  background: var(--black);
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex: 1 1 5rem;
+}
+
+.about .row .content .icons i {
+  font-size: 1.2rem;
+  color: var(--green);
+}
+
+.about .row .content .icons span {
+  font-size: 1.3rem;
+  /* color:var(--black); */
+}
+
+.about .row .content p {
+  font-size: 1.2rem;
+}
+.menu h3 {
+  font-size: 1.6rem;
+  text-align: center;
+}
+.menu h1 {
+  font-size: 2rem;
+  text-align: center;
+}
+.menu .box-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  gap: 1.2rem;
+}
+.menu .box-container .box {
+  border: 0.1rem solid rgba(0, 0, 0, 0.2);
+  position: relative;
+}
+.menu .box-container .box .image {
+  /* height:rem; */
+  width: 100%;
+  height:17rem;
+  padding: 1.5rem;
+  position: relative;
+}
+.menu .box-container .box .image img {
+  width: 100%;
+  /* height:100%; */
+  object-fit: contain;
+
+}
+.menu .box-container .box .image .fa-heart {
+  width: 2rem;
+  background: #eee;
+  height: 2rem;
+  font-size: 1.2rem;
+  border-radius: 50%;
+  line-height: 1.8;
+  text-align: center;
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+}
+
+.menu .box-container .box .content .new{
+ display: flex;
+ align-items: center;
+}
+
+.menu .box-container .box .content a {
+  position: relative;
+  bottom: 0rem;
+}
+.menu .box-container .box .image a{
+  color:#192a56;
+}
+.menu .box-container .box:hover .image .fa-heart:hover {
+  color: var(--green);
+}
+
+.menu .box-container .box .content {
+  padding: 0.4rem;
+  padding-top: 0;
+}
+
+.menu .box-container .box .content .stars {
+  padding-bottom: 1rem;
+}
+.menu .box-container .box .content h3 {
+  text-align: left;
+}
+.menu .box-container .box .content p {
+  color: var(--light-color);
+  /* font-size:1.6rem; */
+  padding: 1rem 0;
+  line-height: 1.1;
+}
+.order h3 {
+  font-size: 1.5rem;
+  text-align: center;
+}
+.order h1 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.order form {
+  width: 90%;
+  margin: auto;
+  /* border: 2px solid; */
+  background: #fff;
+  padding: 1.5rem;
+}
+.order form .inputBox {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  /* border: 2px solid red; */
+}
+.order form .inputBox .input {
+  /* border: 2px solid plum; */
+  display: flex;
+  flex-direction: column;
+  width: 47%;
+  margin-bottom: 5px;
+}
+.order form .inputBox .input span {
+  color: var(--light-color);
+  padding: 0.5rem 0;
+  font-size: 1.3rem;
+  /* margin-bottom:5px; */
+}
+
+.order form .inputBox .input input,
+.order form .inputBox .input textarea {
+  background: #eee;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  color: var(--black);
+  width: 100%;
+  border-radius: 0.5rem;
+  margin-bottom: 1rem;
+}
+.order form .inputBox .input textarea {
+  height: 10rem;
+  resize: none;
+}
+
+.footer .box-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: space-evenly;
+  background: #f5ebeb;
+  padding: 0 2rem;
+  flex-wrap: wrap;
+}
+
+.footer .box-container .box {
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.footer .box-container .box a{
+  color:#192a56;
+}
+.footer .box-container .box h3 {
+  padding: 0.2rem;
+}
+#footer {
+  padding: 0;
+}
+
+@media (max-width: 930px) {
+  html {
+    font-size: 82%;
+    /* padding:10px 5%; */
+  }
+}
+@media (max-width: 768px) {
+  #menu-bar {
+    display: inline-block;
+  }
+
+  header .navbar {
+    position: absolute;
+    left: 0;
+    top: 100%;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+  header .active {
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+  }
+  header .navbar a {
+    display: block;
+    text-align: center;
+    width: 100vw;
+    margin: 5px;
+    background: #eee;
+    border-radius: 2px;
+  }
+  header .navbar a :hover {
+    background: var(--black);
+  }
+
+  .home .home-slider .slide .image img {
+    width: 60%;
+    display: block;
+    /* border: 2px solid; */
+    margin: auto;
+  }
+  .home .home-slider .slide .image {
+    margin: auto;
+    /* border: 2px solid; */
+  }
+  section {
+    padding: 1.5rem 3%;
+  }
+  .about .row .image img {
+    width: 70%;
+    margin: auto;
+    display: block;
+  }
+}
+@media (max-width: 650px) {
+  .order form .inputBox .input {
+    width: 100%;
+    /* border: 2px solid; */
+  }
+}
